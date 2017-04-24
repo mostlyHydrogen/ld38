@@ -192,7 +192,7 @@ var stateGame = {
         bullet.kill();
         this.increaseScore(100);
 
-        if (this.score >= 1000){//15000) {
+        if (this.score >= 15000) {
             this.turretLevel = 1;
             this.turretDelay = 400;
         }
