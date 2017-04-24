@@ -192,7 +192,10 @@ var stateGame = {
         bullet.kill();
         this.increaseScore(100);
 
-        if (this.score >= 15000) this.turretLevel = 1;
+        if (this.score >= 1000){//15000) {
+            this.turretLevel = 1;
+            this.turretDelay = 400;
+        }
 
         this.explosionSound.play('', 0, 0.3, false, true);
     },
